@@ -6,5 +6,13 @@ const app = Vue.createApp({
             details: 'here are the details'
         }
     },
-    methods: {}
+    methods: {
+        addToCart() {
+            this.cart += 1
+        },
+
+        removeFromCart() {
+            this.cart -= 1
+        }
+    }
 })
